@@ -164,6 +164,6 @@ while lambda_ < 20:
         simulation_pb, simulation_pd = simulator.run(num_customers)
         analytic_pb, analytic_pd = analyzer.run()
 
-        print(f"[Lambda]:{lambda_:.2f}    [Theta]:{theta:.10f}  [Simulation Pb]:{simulation_pb:.10f}  [Analytic Pb]:{analytic_pb:.10f}  [Simulation Pd]:{simulation_pd:.10f}  [Analytic Pd]:{analytic_pd:.10f}")
-        lambda_ += 0.5 # for inrease by 0.1 factor or 5
-        theta += rnd.exponential(2) # Increase theta values
+        print(f"[Lambda]:{lambda_:.10f}    [Theta]:{theta:.10f}  [Simulation Pb]:{simulation_pb:.10f}  [Analytic Pb]:{analytic_pb:.10f}  [Simulation Pd]:{simulation_pd:.10f}  [Analytic Pd]:{analytic_pd:.10f}")
+        lambda_ += 0.1 # for inrease by 0.1 factor or 5
+        #theta += rnd.exponential(2) # Increase theta values
