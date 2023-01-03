@@ -166,4 +166,4 @@ while lambda_ < 20:
 
         print(f"[Lambda]:{lambda_:.10f}    [Theta]:{theta:.10f}  [Simulation Pb]:{simulation_pb:.10f}  [Analytic Pb]:{analytic_pb:.10f}  [Simulation Pd]:{simulation_pd:.10f}  [Analytic Pd]:{analytic_pd:.10f}")
         lambda_ += 0.1 # for inrease by 0.1 factor or 5
-        #theta += rnd.exponential(2) # Increase theta values
+        theta += rnd.exponential(3) # Increase theta values
